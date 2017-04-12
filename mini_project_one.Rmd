@@ -1,0 +1,39 @@
+---
+title: "mini_project_one"
+author: "CMSC 205m Winter 2017"
+date: "April 11, 2017"
+output: html_document
+---
+
+```{r}
+library(ggplot2)
+library(fivethirtyeight)
+```
+
+```{r}
+```
+
+```{r}
+bad_drivers
+```
+
+```{r}
+ggplot(data = bad_drivers, aes(x= reorder(state, num_drivers), y = num_drivers)) + geom_point() + coord_flip()
+```
+
+```{r}
+ggplot(data = bad_drivers, aes(x= reorder(state, num_drivers), y = perc_not_distracted)) + geom_point() + coord_flip()
+```
+
+```{r}
+ggplot(data = bad_drivers, aes(x= perc_alcohol, y = num_drivers)) + geom_point() + coord_flip()
+```
+
+```{r}
+ggplot(data = pres_2016_trail, aes(x = lng, y = lat)) +labs(x = "Longitude", y = "Latitude", title = "Trump 2016 Campaign Trail") + geom_path(aes(color = candidate), show.legend = FALSE) 
+```
+
+```{r}
+
+```
+
